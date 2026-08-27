@@ -71,3 +71,9 @@ Final mobile QA at 390×844 after the offer sync rendered the English Da Nang co
 ## Continuous execution audit
 
 The existing Facebook About view again confirmed the matching business name, 68 Chính Hữu, Sơn Trà, Da Nang, phone +84 76 840 2461, 100% recommend from 8 reviews, and no public opening hours. The public landing page on branch main again rendered the verified Da Nang offer, English copy, Instagram/WhatsApp/Facebook CTA and QR assets. No new commercial fields were discovered; no profile duplication or fabricated pricing was introduced.
+
+## Revenue-focused content asset
+
+Created `/home/ubuntu/chips_beauty_english_content_pack.md` with six non-spam English posts mapped to discovery, trust, conversion, traveler FAQ, location and service choice. Each post requires a real photo/video and avoids unverified pricing, opening hours, awards or guarantees.
+
+The content pack is ready for reuse across Instagram, the existing Facebook profile and TikTok. Direct posting remains blocked only by owner-authenticated social sessions.
