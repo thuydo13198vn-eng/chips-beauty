@@ -21,3 +21,6 @@
 
 - Netlify Drop successfully created the temporary public URL: `https://deft-pasca-998987.netlify.app`.
 - Netlify states the unclaimed site remains live for about one hour and then expires; the Claim flow opens Netlify sign-up/login. A persistent free deployment therefore requires an authenticated Netlify account.
+
+- GitHub Pages workflow run `33095148009` uploaded the site artifact successfully, then failed at `actions/deploy-pages@v4` with HTTP 404: `Ensure GitHub Pages has been enabled`. This confirms the remaining GitHub step is a repository setting, not a website or workflow error.
+- Netlify Drop produced `https://deft-pasca-998987.netlify.app`, but the site is temporary until claimed. Claim opens Netlify sign-up/login, which requires the user's authenticated browser session.
