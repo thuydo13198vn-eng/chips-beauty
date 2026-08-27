@@ -93,3 +93,7 @@ ServiceHub (`https://vnservicehub.com/`) was evaluated as a possible Vietnam Eng
 ## Phone fallback CTA
 
 Added a verified `tel:+84768402461` call link under the WhatsApp card. This provides a direct booking fallback for travelers whose browser or messaging app cannot open WhatsApp. The HTML validator passed and the public page returned HTTP 200 after the update.
+
+## Final mobile verification
+
+The latest public page was rendered at 390×844 after the phone CTA update. The hero, English traveler message, Da Nang context, Instagram booking CTA, WhatsApp CTA and service image remain readable and within the viewport. No mobile overflow or visual regression was observed.
