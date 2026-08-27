@@ -31,3 +31,15 @@
 - The unclaimed Netlify URL now returns HTTP 401/password protection and is not accepted as a public production URL.
 - The raw.githack fallback renders the HTML at `https://raw.githack.com/thuydo13198vn-eng/chips-beauty/main/index.html`; console verification confirmed all four image assets loaded with non-zero natural dimensions and all booking links point to `https://www.instagram.com/DO13198/`.
 - A persistent, password-free Netlify deployment still requires claiming the site through Netlify sign-up/login.
+
+## Existing Canva asset check
+
+The existing Canva site `https://chipsbeauty.my.canva.site/` returns HTTP 200, but its browser page is JavaScript-rendered and visually blank in the sandbox. Source inspection found a verified public WhatsApp link `https://wa.me/84768402461` and embedded labels for Zalo, KakaoTalk and WeChat; their actual external URLs were not exposed, so no guessed links were added. The Canva site is kept as an existing fallback asset, not replaced or deleted.
+
+## Stable public fallback check
+
+HTML Preview renders the committed landing page without the raw.githack confirmation screen at `https://htmlpreview.github.io/?https://github.com/thuydo13198vn-eng/chips-beauty/blob/53bdb08/index.html`. Browser console verification found the correct page title, all four image assets loaded with non-zero dimensions, all Instagram booking CTAs point to `https://www.instagram.com/DO13198/`, and no internal anchors are broken. The service is a free GitHub-backed preview rather than a first-party custom hosting account, but it remains public as long as the repository and commit remain available.
+
+## Mobile QA
+
+Chromium headless at 390×844 with a 10-second virtual-time budget rendered the HTML Preview page cleanly. The responsive navigation collapsed correctly, the English hero copy fit the viewport, the primary Instagram booking CTA remained visible, and the contact-card image loaded. The first blank screenshot was a timing artifact; the waited render is the accepted mobile check.
