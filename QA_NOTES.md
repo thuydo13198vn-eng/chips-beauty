@@ -47,3 +47,23 @@ Chromium headless at 390×844 with a 10-second virtual-time budget rendered the 
 ## Final public check
 
 The branch-main HTML Preview URL rendered the updated landing page with the WhatsApp CTA. Browser verification found six Instagram CTAs, four WhatsApp CTAs, four loaded image assets, no broken internal anchors, and a valid page title/description. Chromium mobile QA at 390×844 rendered the hero, English copy, Instagram booking CTA, WhatsApp CTA and contact-card image without overflow. The preview wrapper does not expose the JSON-LD script to the rendered DOM, so structured data is retained in the source but should become effective only on a first-party host such as GitHub Pages or claimed Netlify.
+
+## Profile and listing audit
+
+A public Facebook profile was found and verified as the existing business asset: **Chip’s Beauty House - Nail & Eyelash & Shampoo**, 4.2K followers, 1 following, category Beauty/cosmetic/personal care, address **68 Chính Hữu, Sơn Trà, Da Nang, Vietnam**, phone `+84 76 840 2461`, and 100% recommend from 8 reviews. This matches the Canva address and WhatsApp number, so it should be optimized/claimed rather than duplicated.
+
+Tripadvisor search for `Chips Beauty Da Nang` did not show an exact Chips Beauty listing; results were other Da Nang spas/beauty businesses. No Tripadvisor listing should be created or claimed until the existing business owner confirms ownership through Tripadvisor.
+
+## Additional channel research
+
+Fresha’s official business page explicitly lists nails, spa/sauna and massage business types, says businesses can list on its beauty/wellness marketplace, reach clients and accept self-booking online 24/7. It is a strong candidate after the offer has confirmed price, duration and availability; marketplace new-client fees apply according to Fresha’s pricing/help pages.
+
+Traveloka AXES is the official activity-partner route and Traveloka already carries Da Nang spa/beauty experiences in search results. The AXES page did not render in the browser sandbox, so no unverified partner terms were added. Klook remains a secondary marketplace candidate after offer data is complete.
+
+## Verified offer and channel sync
+
+The Canva source confirmed the real offer categories **Nails, Lashes, Relaxation, Shampoo**, the exact address **68 Chính Hữu, Đà Nẵng**, the WhatsApp link/number, and the source text for eyelash extensions and massage therapy. No public price or opening hours were found, so the landing page explicitly asks guests to confirm current price and available time rather than publishing invented values.
+
+The public Facebook profile `https://www.facebook.com/p/Chips-Beauty-House-Nail-Eyelash-Shampoo-61581697785415/` was verified as the existing profile with matching address/phone, 4.2K followers and 8 recommendations. The website now links to this existing profile for trust. Tripadvisor search did not reveal an exact Chips Beauty listing, so no duplicate listing was created. Fresha was identified as the next best low-cost booking marketplace candidate after missing commercial fields are confirmed.
+
+Final mobile QA at 390×844 after the offer sync rendered the English Da Nang copy, Check availability CTA, WhatsApp CTA and hero image without overflow.
