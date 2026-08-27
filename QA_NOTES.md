@@ -85,3 +85,11 @@ The public HTML Preview page after commit `7abbf56` rendered successfully. Brows
 ## WhatsApp attribution update
 
 The four WhatsApp CTAs now prefill a transparent message saying the guest found Chips Beauty via the website. This improves source attribution without tracking cookies or collecting sensitive data. Validator remains `ok`, and the updated wa.me URL redirects to the WhatsApp send endpoint with HTTP 200.
+
+## New-channel safety audit
+
+ServiceHub (`https://vnservicehub.com/`) was evaluated as a possible Vietnam English-language marketplace. Its homepage presents salons/spas, English booking, free business listing and booking claims, but these are first-party marketing claims and were not treated as verified demand. The official Terms URL (`https://vnservicehub.com/terms`) returned 404. Because a legal/terms page could not be verified, ServiceHub is **not recommended for Chips Beauty at this time** and no account, listing or business data was submitted.
+
+## Phone fallback CTA
+
+Added a verified `tel:+84768402461` call link under the WhatsApp card. This provides a direct booking fallback for travelers whose browser or messaging app cannot open WhatsApp. The HTML validator passed and the public page returned HTTP 200 after the update.
