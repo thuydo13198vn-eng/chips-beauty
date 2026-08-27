@@ -81,3 +81,7 @@ The content pack is ready for reuse across Instagram, the existing Facebook prof
 ## Latest public verification
 
 The public HTML Preview page after commit `7abbf56` rendered successfully. Browser-side checks confirmed the English document, verified Da Nang address, the long-tail keywords `nail salon Da Nang`, `eyelash extensions Da Nang`, `beauty salon Son Tra`, and `English-speaking beauty salon Da Nang`, canonical URL, BeautySalon JSON-LD, 6 Instagram CTAs, 4 WhatsApp CTAs, 1 Facebook CTA, and 4/4 images loaded with natural dimensions. No new error was detected.
+
+## WhatsApp attribution update
+
+The four WhatsApp CTAs now prefill a transparent message saying the guest found Chips Beauty via the website. This improves source attribution without tracking cookies or collecting sensitive data. Validator remains `ok`, and the updated wa.me URL redirects to the WhatsApp send endpoint with HTTP 200.
