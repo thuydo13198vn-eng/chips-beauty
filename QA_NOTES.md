@@ -43,3 +43,7 @@ HTML Preview renders the committed landing page without the raw.githack confirma
 ## Mobile QA
 
 Chromium headless at 390×844 with a 10-second virtual-time budget rendered the HTML Preview page cleanly. The responsive navigation collapsed correctly, the English hero copy fit the viewport, the primary Instagram booking CTA remained visible, and the contact-card image loaded. The first blank screenshot was a timing artifact; the waited render is the accepted mobile check.
+
+## Final public check
+
+The branch-main HTML Preview URL rendered the updated landing page with the WhatsApp CTA. Browser verification found six Instagram CTAs, four WhatsApp CTAs, four loaded image assets, no broken internal anchors, and a valid page title/description. Chromium mobile QA at 390×844 rendered the hero, English copy, Instagram booking CTA, WhatsApp CTA and contact-card image without overflow. The preview wrapper does not expose the JSON-LD script to the rendered DOM, so structured data is retained in the source but should become effective only on a first-party host such as GitHub Pages or claimed Netlify.
