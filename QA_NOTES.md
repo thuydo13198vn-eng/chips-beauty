@@ -24,3 +24,10 @@
 
 - GitHub Pages workflow run `33095148009` uploaded the site artifact successfully, then failed at `actions/deploy-pages@v4` with HTTP 404: `Ensure GitHub Pages has been enabled`. This confirms the remaining GitHub step is a repository setting, not a website or workflow error.
 - Netlify Drop produced `https://deft-pasca-998987.netlify.app`, but the site is temporary until claimed. Claim opens Netlify sign-up/login, which requires the user's authenticated browser session.
+
+## Latest continuation check
+
+- GitHub Pages API still returns 404 because Pages is not enabled; the GitHub Actions workflow uploads the artifact but fails creating the Pages deployment.
+- The unclaimed Netlify URL now returns HTTP 401/password protection and is not accepted as a public production URL.
+- The raw.githack fallback renders the HTML at `https://raw.githack.com/thuydo13198vn-eng/chips-beauty/main/index.html`; console verification confirmed all four image assets loaded with non-zero natural dimensions and all booking links point to `https://www.instagram.com/DO13198/`.
+- A persistent, password-free Netlify deployment still requires claiming the site through Netlify sign-up/login.
