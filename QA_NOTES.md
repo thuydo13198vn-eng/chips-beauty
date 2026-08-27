@@ -77,3 +77,7 @@ The existing Facebook About view again confirmed the matching business name, 68 
 Created `/home/ubuntu/chips_beauty_english_content_pack.md` with six non-spam English posts mapped to discovery, trust, conversion, traveler FAQ, location and service choice. Each post requires a real photo/video and avoids unverified pricing, opening hours, awards or guarantees.
 
 The content pack is ready for reuse across Instagram, the existing Facebook profile and TikTok. Direct posting remains blocked only by owner-authenticated social sessions.
+
+## Latest public verification
+
+The public HTML Preview page after commit `7abbf56` rendered successfully. Browser-side checks confirmed the English document, verified Da Nang address, the long-tail keywords `nail salon Da Nang`, `eyelash extensions Da Nang`, `beauty salon Son Tra`, and `English-speaking beauty salon Da Nang`, canonical URL, BeautySalon JSON-LD, 6 Instagram CTAs, 4 WhatsApp CTAs, 1 Facebook CTA, and 4/4 images loaded with natural dimensions. No new error was detected.
