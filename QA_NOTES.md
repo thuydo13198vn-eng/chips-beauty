@@ -82,6 +82,10 @@ The content pack is ready for reuse across Instagram, the existing Facebook prof
 
 The public HTML Preview page after commit `7abbf56` rendered successfully. Browser-side checks confirmed the English document, verified Da Nang address, the long-tail keywords `nail salon Da Nang`, `eyelash extensions Da Nang`, `beauty salon Son Tra`, and `English-speaking beauty salon Da Nang`, canonical URL, BeautySalon JSON-LD, 6 Instagram CTAs, 4 WhatsApp CTAs, 1 Facebook CTA, and 4/4 images loaded with natural dimensions. No new error was detected.
 
+## Final public live-entrypoint QA
+
+A stable `live.html` entrypoint was added because the HTML Preview layer intermittently cached `index.html` and delayed the remote hero image on mobile. The public URL `https://htmlpreview.github.io/?https://github.com/thuydo13198vn-eng/chips-beauty/blob/main/live.html` returned HTTP 200 and rendered the current premium page. Two headless renders at 390×844 and 1440×1000 completed; the inline hero card image was visible in the browser and the final mobile screenshot. DOM checks passed: correct title and English language, description, H1, sections `top/services/visit/faq`, 6 Instagram CTAs, 4 WhatsApp CTAs, 2 phone CTAs, 1 Facebook CTA, 7 images loaded with ALT text, no broken internal anchors and no horizontal overflow. The raw source on remote main is commit `b779e3f9dc07fc3d04b64263d0e57e89d53aef2a`; local branch is clean and synchronized.
+
 ## WhatsApp attribution update
 
 The four WhatsApp CTAs now prefill a transparent message saying the guest found Chips Beauty via the website. This improves source attribution without tracking cookies or collecting sensitive data. Validator remains `ok`, and the updated wa.me URL redirects to the WhatsApp send endpoint with HTTP 200.
