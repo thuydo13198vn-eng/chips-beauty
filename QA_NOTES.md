@@ -119,3 +119,7 @@ The public Facebook Photos page exposed brand/service imagery, including a Chips
 ## Downloaded photo quality check
 
 Two accessible Facebook thumbnails were checked locally. One is a 206×206 before/after foot-care graphic with text; the other is a 206×206 salon scene with a timestamp overlay. Both appear to be business-related but are too small/compressed for a premium hero or full gallery. They were not embedded in the redesign to avoid degraded visual quality; the supplied Chips Beauty card remains the primary hero asset.
+
+## Premium redesign QA
+
+The premium redesign was published on branch `main` and opened in the public HTML Preview. The browser render showed the new editorial hero, dark plum announcement bar, blue accent, premium card treatment, service ribbon and booking CTAs. Browser-side checks confirmed title `Chips Beauty — Da Nang beauty appointments for travelers`, `lang=en`, canonical URL, `services/visit/faq` sections, English/Da Nang/address/service text, 6 Instagram CTAs, 4 WhatsApp CTAs, 2 phone CTAs, 1 Facebook CTA and 7/7 images loaded with natural dimensions.
