@@ -135,3 +135,24 @@ The latest public URL returned HTTP 200 with measured transfer time 0.038s and 1
 ## Public QA fix pass
 
 The public DOM showed that the HTML Preview wrapper did not preserve the source JSON-LD script in the rendered DOM, although the source HTML contains it. To make the fallback page more resilient, the source now also exposes lightweight Schema.org microdata on the body (`BeautySalon`, name, telephone, URL, address and service types). A preconnect to raw GitHub was added, the hero image keeps async decoding, and six below-the-fold QR images use lazy loading with async decoding. A final headless screenshot also caught an intermittent blank hero card while the interactive browser render showed the card correctly; the hero image was first changed to eager/high-priority synchronous decoding, then embedded as a data URI because the HTML Preview wrapper still intermittently delayed the remote hero asset on mobile first paint. Two local Chromium renders at both 390×844 and 1440×1000 now show the hero image consistently. Local semantic checks passed: English document, H1, two phone CTAs, six Instagram CTAs, four WhatsApp CTAs, one Facebook link, seven images with ALT text and six lazy-loaded QR images. Local HTTP returned 200.
+
+
+## Canva old-site comparison audit
+
+The old Canva website at `https://chipsbeauty.my.canva.site/` returned HTTP 200 and rendered the real offer categories Nails, Lashes, Relaxation and Shampoo, plus the verified address `68 Chính Hữu - Đà Nẵng`, phone `0768 402 461`, email `thuydo13198vn@gmail.com`, WhatsApp and Call links. Its visual language uses a warm pink/plum palette, large rounded image blocks and a clear `BOOK NOW` button. The page exposes 10 loaded images with natural dimensions, including four service/brand media assets and two video poster images.
+
+The old site has useful source material but important weaknesses for the international conversion goal: generic Canva wedding-template title, `lang=vi-VN`, no meta description, mostly Vietnamese/translated copy, empty image ALT attributes, no visible Instagram/Facebook booking link, no actual Zalo/KakaoTalk/WeChat URLs (the links point to internal Canva page anchors), an unverified `Enjoy 10% OFF Today!` promotional claim, and no clear structured booking information. These findings are reference-only; no old-site claims were copied into the new site unless already verified elsewhere.
+
+
+## Old-asset gallery upgrade
+
+The old Canva site was audited and its public image assets were downloaded for quality review. Four high-resolution service/brand images were selected from the existing Chips Beauty site: salon interior, nail art, eyelash extensions and massage. Poster/video frames with visible text, overlays or weaker quality were not used. The selected images were optimized locally and added as a responsive gallery with descriptive ALT text, plus the salon interior was promoted to the hero visual. The navigation now includes Gallery, and OG/Twitter preview images plus BeautySalon JSON-LD image URLs point to the real service visuals.
+
+Local Chromium QA at 390×844 and 1440×1000 showed the salon image in the hero, clean mobile stacking, a balanced desktop gallery layout, readable captions and no visible overflow. The old Canva source remains unchanged.
+
+
+## Comparison decision and current upgrade
+
+Comparison outcome: the current redesign is the preferred foundation for international discovery and booking because it has an English-first information architecture, traveler-focused copy, explicit service/location/FAQ sections, stronger CTA routing, descriptive ALT text, canonical/OG/Twitter metadata and structured data. The old Canva site contributes valuable real brand/service imagery and the verified public email, but its generic title, Vietnamese language tag, missing description/ALT/schema, internal placeholder links and unverified promotion make it unsuitable as the primary public experience.
+
+The current version now uses the real salon interior image as the hero, adds a four-image gallery for salon, nails, lashes and massage, adds a Gallery navigation anchor, adds the verified email fallback, and synchronizes the same source to `index.html` and `live.html`. No unverified price, opening hours, review, promotion or social URL was added.
