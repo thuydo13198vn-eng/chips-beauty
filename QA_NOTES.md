@@ -123,3 +123,11 @@ Two accessible Facebook thumbnails were checked locally. One is a 206×206 befor
 ## Premium redesign QA
 
 The premium redesign was published on branch `main` and opened in the public HTML Preview. The browser render showed the new editorial hero, dark plum announcement bar, blue accent, premium card treatment, service ribbon and booking CTAs. Browser-side checks confirmed title `Chips Beauty — Da Nang beauty appointments for travelers`, `lang=en`, canonical URL, `services/visit/faq` sections, English/Da Nang/address/service text, 6 Instagram CTAs, 4 WhatsApp CTAs, 2 phone CTAs, 1 Facebook CTA and 7/7 images loaded with natural dimensions.
+
+## Public URL regression QA
+
+The latest public URL returned HTTP 200 with measured transfer time 0.038s and 1,269 bytes for the HTML preview response; all four raw GitHub image assets returned HTTP 200. Desktop screenshot at 1440×1000 and mobile screenshot at 390×844 were reviewed. The premium hero, announcement bar, navigation, typography, CTA buttons, local Da Nang context and card visual rendered without visible overflow or layout breakage. The validator passed with title, 6 Instagram CTAs, 4 WhatsApp CTAs, 1 Facebook link and 4 assets.
+
+## Public QA fix pass
+
+The public DOM showed that the HTML Preview wrapper did not preserve the source JSON-LD script in the rendered DOM, although the source HTML contains it. To make the fallback page more resilient, the source now also exposes lightweight Schema.org microdata on the body (`BeautySalon`, name, telephone, URL, address and service types). A preconnect to raw GitHub was added, the hero image keeps async decoding, and six below-the-fold QR images use lazy loading with async decoding. Local semantic checks passed: English document, H1, two phone CTAs, six Instagram CTAs, four WhatsApp CTAs, one Facebook link, seven images with ALT text and six lazy-loaded QR images. Local HTTP returned 200.
