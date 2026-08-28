@@ -103,3 +103,19 @@ The latest public page was rendered at 390×844 after the phone CTA update. The 
 A current Reddit `r/DaNang` thread shows a traveler coming to Da Nang with family, staying in Hai Chau, actively asking for nail-art recommendations. The useful decision factors in the replies were proximity/area, English-speaking staff, cleanliness, detailed nail-art capability, speed and price. This supports content that targets traveler intent and hotel-area guidance, but does not justify copying competitor claims or posting unsolicited promotions.
 
 The Vinpearl result indicated that English travel content about Da Nang nail salons includes price ranges and booking guidance, but the page did not render reliably in the browser sandbox. No unverified competitor price was added to Chips Beauty.
+
+## Canva website audit
+
+The current Canva site `https://chipsbeauty.my.canva.site/` returned HTTP 200 and exposed the real service categories **Nails, Lashes, Relaxation, Shampoo**, a `BOOK NOW` CTA and contact links labeled WhatsApp, Zalo, Call, KakaoTalk and WeChat. The page title is a generic Canva wedding-event template title, which is a branding/SEO weakness. The browser screenshot did not render reliably in the sandbox, so no visual claim was made from an unavailable screenshot; the current GitHub landing page remains the auditable source for redesign work.
+
+## Premium visual benchmark
+
+Image search references for premium nail/beauty websites consistently emphasized editorial typography, high-contrast hero imagery, generous whitespace, service-led navigation and a direct booking CTA. These references are design inspiration only; no third-party image was copied into Chips Beauty. The redesign should use the existing real Chips Beauty images/QR assets, with generated or stock imagery only clearly labeled as illustrative if ever needed.
+
+## Photo rights/asset audit
+
+The public Facebook Photos page exposed brand/service imagery, including a Chips Beauty contact-card image and service-related thumbnails. Individual photo URLs redirected to Facebook login in the sandbox, so the images were not downloaded or embedded without a reliable owner/rights path. The redesign will use only the four supplied local QR/contact assets unless a clearly authorized business photo is available; no third-party or customer photo will be represented as Chips Beauty imagery.
+
+## Downloaded photo quality check
+
+Two accessible Facebook thumbnails were checked locally. One is a 206×206 before/after foot-care graphic with text; the other is a 206×206 salon scene with a timestamp overlay. Both appear to be business-related but are too small/compressed for a premium hero or full gallery. They were not embedded in the redesign to avoid degraded visual quality; the supplied Chips Beauty card remains the primary hero asset.
