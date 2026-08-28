@@ -97,3 +97,15 @@ Reply to genuine questions in English when possible. Use the same operational re
 > Hello, thank you for contacting Chips Beauty. Please send your preferred date, time, service and number of guests. If you are visiting Da Nang, please also share your hotel area or nearest landmark. We will confirm the current price, duration, available time and booking conditions before your appointment.
 
 Ask for an honest review only after a real completed service and only through the platform’s permitted process. Never offer a fabricated review, mass-DM strangers, or copy the same promotional comment into unrelated travel discussions.
+
+## Post 7 — Family trip and hotel-area booking
+
+**Visual:** A real carousel showing permitted work examples from two or more guests, or one real nail-art close-up plus a genuine salon/location image.
+
+**Caption:**
+
+> Traveling to Da Nang with family or friends and looking for nail art? Chips Beauty can check group availability for nails, eyelash extensions, relaxation/massage therapy and shampoo at 68 Chinh Huu, Son Tra. Send your preferred date, time, service and number of guests. Add your hotel area or nearest landmark so we can guide your arrival. We confirm the current price, duration, available time and booking conditions before accepting.
+>
+> English-friendly booking via the link in bio or WhatsApp +84 76 840 2461.
+
+**Purpose:** Respond to the real traveler pattern of group/family visitors choosing by hotel district and wanting English communication. Publish only with genuine work images and only claim group availability when the requested date can actually be supported.

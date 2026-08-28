@@ -97,3 +97,9 @@ Added a verified `tel:+84768402461` call link under the WhatsApp card. This prov
 ## Final mobile verification
 
 The latest public page was rendered at 390×844 after the phone CTA update. The hero, English traveler message, Da Nang context, Instagram booking CTA, WhatsApp CTA and service image remain readable and within the viewport. No mobile overflow or visual regression was observed.
+
+## Fresh traveler-intent benchmark
+
+A current Reddit `r/DaNang` thread shows a traveler coming to Da Nang with family, staying in Hai Chau, actively asking for nail-art recommendations. The useful decision factors in the replies were proximity/area, English-speaking staff, cleanliness, detailed nail-art capability, speed and price. This supports content that targets traveler intent and hotel-area guidance, but does not justify copying competitor claims or posting unsolicited promotions.
+
+The Vinpearl result indicated that English travel content about Da Nang nail salons includes price ranges and booking guidance, but the page did not render reliably in the browser sandbox. No unverified competitor price was added to Chips Beauty.
