@@ -156,3 +156,18 @@ Local Chromium QA at 390×844 and 1440×1000 showed the salon image in the hero,
 Comparison outcome: the current redesign is the preferred foundation for international discovery and booking because it has an English-first information architecture, traveler-focused copy, explicit service/location/FAQ sections, stronger CTA routing, descriptive ALT text, canonical/OG/Twitter metadata and structured data. The old Canva site contributes valuable real brand/service imagery and the verified public email, but its generic title, Vietnamese language tag, missing description/ALT/schema, internal placeholder links and unverified promotion make it unsuitable as the primary public experience.
 
 The current version now uses the real salon interior image as the hero, adds a four-image gallery for salon, nails, lashes and massage, adds a Gallery navigation anchor, adds the verified email fallback, and synchronizes the same source to `index.html` and `live.html`. No unverified price, opening hours, review, promotion or social URL was added.
+
+
+## Public gallery QA before scroll
+
+The new `public.html` URL returned HTTP 200 and visibly rendered the salon interior hero and the new Gallery navigation. DOM checks found the gallery with four cards and all four gallery images loaded with descriptive ALT text; the hero loaded correctly. Six QR images were still `complete=false` at the initial viewport because they are intentionally lazy-loaded below the fold; this is expected and will be verified after scrolling. The public DOM confirmed 6 Instagram CTAs, 4 WhatsApp CTAs, 2 phone CTAs, 1 email CTA and 1 Facebook CTA, with no broken internal anchors or horizontal overflow.
+
+
+## Public final-page QA
+
+The public `public.html` entrypoint rendered the new salon hero and four-image gallery after the cache-resistant URL change. Full-page scroll verification activated all six lazy-loaded QR images; all images then reported complete with non-zero natural dimensions. Contact, FAQ and footer sections were present, email CTA pointed to the verified public address, no internal anchor was broken, and document/body width matched the viewport without horizontal overflow.
+
+
+## Public gallery screenshot QA
+
+Two fresh public screenshots for `public.html` at 390×844 and 1440×1000 were reviewed. The mobile hero now shows the real Chips Beauty salon interior without blank first-paint; typography, announcement bar, CTA buttons and spacing remain readable. The desktop hero is balanced with the salon image, blue accent stamp and service ribbon; the new gallery assets are present below the fold. Chromium produced no page-load errors, the validator passed, and the repository source was ready except for this final QA note.
